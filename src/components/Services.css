@@ -1,0 +1,196 @@
+
+/* Services Section Styles */
+.services-section {
+    padding: 6rem 0;
+    background-color: var(--light-gray);
+  }
+  
+  .services-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .services-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  .services-header p {
+    font-size: 1.1rem;
+    color: var(--text);
+    opacity: 0.9;
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .service-row {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(37, 99, 235, 0.1);
+  }
+  
+  .service-row:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .service-header {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    transition: background-color 0.3s ease;
+    gap: 1.5rem; /* Space between content and button */
+  }
+  
+  .service-title-section {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .service-icon {
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0.25rem;
+  }
+  
+  .service-title-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  
+  .service-short-desc {
+    font-size: 0.9rem;
+    color: var(--text);
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services-container {
+      grid-template-columns: 1fr; /* Stack on mobile */
+      gap: 1rem;
+    }
+  
+    .services-header {
+      margin-bottom: 2rem;
+    }
+  
+    .services-header h2 {
+      font-size: 2rem;
+    }
+  }
+
+
+
+/* Expand Button Styles */
+.expand-button {
+    background: #047857;
+    border: none;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(4, 120, 87, 0.2);
+    flex-shrink: 0; /* Prevents button from shrinking */
+  }
+  
+  .expand-button svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.5;
+  }
+  
+  /* Hover effect */
+  .expand-button:hover {
+    transform: scale(1.1);
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(4, 120, 87, 0.3);
+  }
+  
+  /* Active/pressed state */
+  .expand-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(4, 120, 87, 0.2);
+  }
+  
+  /* Optional: Add hover effect to entire service row */
+  .service-header:hover .expand-button {
+    transform: scale(1.1);
+    background: #047857;
+  }
+  
+  /* Service Content (Full Description) Styles */
+  .service-content {
+    padding: 0.5rem 4rem 2rem 4rem; /* More padding on sides and bottom */
+    color: white;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      rgba(7, 151, 110, 0.95),
+      rgba(4, 94, 69, 0.95)
+    );
+    border-top: 1px solid rgba(4, 120, 87, 0.1);
+  }
+  
+  .service-content p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white; /* Slightly lighter than black for better readability */
+    max-width: 90%; /* Prevents text from stretching too wide */
+    margin: 0 auto;
+  }
+  
+  /* Add subtle animation to the content expansion */
+  .service-content {
+    animation: fadeInContent 0.3s ease-out;
+  }
+  
+  @keyframes fadeInContent {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .service-content {
+      padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    }
+    
+    .service-content p {
+      max-width: 100%;
+      font-size: 1rem;
+    }
+  }
+  

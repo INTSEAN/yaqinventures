@@ -1,0 +1,29 @@
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: #047857; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px; /* Adjust this value to move the underline further below the text */
+    left: 0;
+    background-color: #047857;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav-link:hover {
+    color: #38a169; /* text-green-700 */
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

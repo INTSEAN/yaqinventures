@@ -45,14 +45,14 @@ import {
               </p>
               <div className="social-links">
                     <a
-                    href="tel:+17746027563"
+                    href="tel:+254703382976"
                     title="Call Us"
                     className={`social-link ${animateCallIcon ? 'animate' : ''}`}
                     >
                     <FaPhone />
                     </a>
                     <a
-                    href="https://wa.me/+17746027563"
+                    href="https://wa.me/+254703382976"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Chat on WhatsApp"
@@ -98,10 +98,10 @@ import {
                   <a href="/about">About Us</a>
                 </li>
                 <li>
-                  <a href="tel:+17746027563">Call Us</a>
+                  <a href="tel:+254703382976">Call Us</a>
                 </li>
                 <li>
-                  <a href="https://wa.me/+17746027563">Chat With Us</a>
+                  <a href="https://wa.me/+254703382976">Chat With Us</a>
                 </li>
                 <li>
                   <a
@@ -144,7 +144,7 @@ import {
                     onClick={scrollToContact}
                     className="service-link"
                   >
-                    Healthcare Staffing
+                    Shipping Services
                   </a>
                 </li>
                 <li>
@@ -153,7 +153,7 @@ import {
                     onClick={scrollToContact}
                     className="service-link"
                   >
-                    Temporary Placement
+                    Export Services
                   </a>
                 </li>
                 <li>
@@ -162,7 +162,7 @@ import {
                     onClick={scrollToContact}
                     className="service-link"
                   >
-                    Consulting Services
+                    Consulting Services 
                   </a>
                 </li>
                 <li>
@@ -171,7 +171,7 @@ import {
                     onClick={scrollToContact}
                     className="service-link"
                   >
-                    Talent Solutions
+                    Marketing Services
                   </a>
                 </li>
                 <li className="developer-service">

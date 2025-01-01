@@ -1,0 +1,84 @@
+.values-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .values-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2E7D32;
+    margin-bottom: 10px;
+  }
+  
+  .values-subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .values-carousel {
+    display: flex;
+    gap: -10px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .values-carousel::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+  
+  .value-card {
+    background: linear-gradient(to right, #047857, #08b080);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 0 250px; /* Width for each card */
+    scroll-snap-align: center;
+  }
+  
+  .value-letter {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .value-title {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .value-description {
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.5em;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .values-title {
+      font-size: 2em;
+    }
+  
+    .value-card {
+      flex: 0 0 200px; /* Adjust card width for smaller screens */
+    }
+  
+    .value-letter {
+      font-size: 2.5em;
+    }
+  
+    .value-title {
+      font-size: 1.2em;
+    }
+  
+    .value-description {
+      font-size: 0.9em;
+    }
+  }
+  

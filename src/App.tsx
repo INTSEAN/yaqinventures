@@ -7,6 +7,7 @@ import Partners from './components/Partners';
 import Contact from './components/Contact';
 import Services from './components/Services';
 import Footer from './components/Footer';
+import Values from './components/Values';
 
 function App() {
   const [animateCallIcon, setAnimateCallIcon] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       <Navbar onContactClick={handleContactClick} />
       <Hero />
       <About />
+      <Values />
       <Products />
       <Services />
       <Partners />

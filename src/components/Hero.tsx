@@ -20,7 +20,7 @@ export default function Hero() {
           </p>
           <a
             href="#contact"
-            style={{ backgroundColor: '#047857' }}
+            style={{ background: 'linear-gradient(45deg, #047857, #08e4a6)' }}
             className="text-white px-8 py-3 rounded-lg transition duration-300"
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#03634a'}
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#047857'}

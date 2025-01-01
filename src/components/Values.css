@@ -19,7 +19,7 @@
   
   .values-carousel {
     display: flex;
-    gap: -10px;
+    gap: 0px;
     overflow-x: auto;
     padding: 20px;
     scroll-snap-type: x mandatory;
@@ -31,12 +31,12 @@
   }
   
   .value-card {
-    background: linear-gradient(to right, #047857, #08b080);
+    background: linear-gradient(to right, rgba(4, 120, 87, 1), rgb(7, 155, 113));
     color: white;
     text-align: center;
     padding: 20px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex: 0 0 250px; /* Width for each card */
     scroll-snap-align: center;

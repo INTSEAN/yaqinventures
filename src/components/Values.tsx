@@ -10,6 +10,17 @@ const coreValues = [
 ];
 
 const Values = () => {
+  const gradientColors = [
+    '#1750ad', // Start color
+    '#0ebb2c',
+    '#1750ad',
+    '#0ebb2c',
+    '#1750ad',
+    '#0ebb2c',
+    '#1750ad',
+    '#0ebb2c', // End color
+  ];
+
   return (
     <div className="values-container">
       <h1 className="values-title">Our Core Values</h1>
@@ -18,7 +29,11 @@ const Values = () => {
       </p>
       <div className="values-carousel">
         {coreValues.map((value, index) => (
-          <div className="value-card" key={index}>
+          <div
+            className="value-card"
+            key={index}
+            style={{ backgroundColor: gradientColors[index % gradientColors.length] }}
+          >
             <h3 className="value-letter">{value.letter}</h3>
             <h4 className="value-title">{value.title}</h4>
             <p className="value-description">{value.description}</p>

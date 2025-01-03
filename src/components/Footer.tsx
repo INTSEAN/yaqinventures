@@ -39,7 +39,7 @@ const Footer: React.FC<FooterProps> = ({ animateCallIcon }) => {
         <div className="footer-grid">
           {/* Company Info */}
           <div className="footer-section">
-            <h3>Yaqin Ventures</h3>
+            <h3>Yaqin Ventures Limited</h3>
             <p>
               Empowering farmers by creating market opportunities for African produce through innovative processing and strategic marketing.
             </p>
@@ -324,7 +324,7 @@ const Footer: React.FC<FooterProps> = ({ animateCallIcon }) => {
 
         {/* Bottom Bar */}
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Yaqin Ventures. All rights reserved.</p>
+          <p>&copy; {currentYear} Yaqin Ventures Limited. All rights reserved.</p>
           <div className="footer-bottom-links">
             <button onClick={() => setShowPrivacy(true)} className="legal-link">
               Privacy Policy

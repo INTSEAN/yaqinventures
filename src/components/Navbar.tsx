@@ -17,7 +17,7 @@ export default function Navbar({ onContactClick }: NavbarProps) {
             <a href="#">
               <img src={logo} alt="Logo" className="w-12 h-12 rounded-full" />
             </a>
-            <span className="text-xl text-slate-950">Yaqin Ventures</span>
+            <span className="text-xl text-slate-950">Yaqin Ventures Limited</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -26,6 +26,7 @@ export default function Navbar({ onContactClick }: NavbarProps) {
             <a href="#products" className="nav-link">Products</a>
             <a href="#partners" className="nav-link">Partners</a>
             <a href="#contact" className="nav-link" onClick={onContactClick}>Contact</a>
+            <a href="tel:+254703382976" className="nav-link">Call Now</a>
           </div>
 
           <div className="md:hidden flex items-center">

@@ -66,7 +66,7 @@ const ServiceRow: React.FC<ServiceRowProps> = ({ service, isOpen, toggleOpen }) 
           className="expand-button"
           animate={{ 
             rotate: isOpen ? 180 : 0,
-            backgroundColor: isOpen ? '#FFFFFF' : '#047857'
+            backgroundColor: isOpen ? '#1750ad' : '#0ebb2c'
           }}
           whileHover={{ 
             scale: 1.1,

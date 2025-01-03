@@ -1,0 +1,103 @@
+.videos-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.videos-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #2E7D32;
+  margin-bottom: 20px;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.video-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video {
+  width: 100%;
+  height: 416px;
+}
+
+.image-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.processing-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Hide carousel on larger screens */
+.video-carousel {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-column {
+    display: none; /* Hide video columns on smaller screens */
+  }
+
+  .image-column {
+    margin-bottom: 20px; /* Add space below the image */
+  }
+}
+
+@media (max-width: 768px) {
+  .videos-title {
+    font-size: 2em;
+  }
+
+  .video-carousel {
+    display: flex; /* Show carousel on smaller screens */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .video-carousel .video {
+    flex: 0 0 80%; /* Adjust video width for carousel */
+    scroll-snap-align: center;
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .carousel-button.prev {
+    left: 10px;
+  }
+
+  .carousel-button.next {
+    right: 10px;
+  }
+
+  .video-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+} 

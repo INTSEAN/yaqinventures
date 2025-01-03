@@ -31,7 +31,7 @@
   }
   
   .value-card {
-    background: linear-gradient(to right, rgba(4, 120, 87, 1), rgb(7, 155, 113));
+    /* background: linear-gradient(to right, rgba(4, 120, 87, 1), rgb(7, 155, 113)); */
     color: white;
     text-align: center;
     padding: 20px;

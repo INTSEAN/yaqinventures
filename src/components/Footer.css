@@ -2,9 +2,9 @@
 /* Footer Styles */
 .footer {
     background: linear-gradient(
-      90deg,
-      #047857 0%,
-      #047857 100%
+      150deg,
+      #0ebb2c 0%,
+      #1750ad 100%
     );
     color: white;
     padding: 4rem 0 2rem 0;
@@ -424,7 +424,7 @@
   .contact button {
     width: 100%;
     padding: 1rem;
-    background: linear-gradient(45deg, #047857, #08e4a6);
+    background: linear-gradient(45deg, #0ebb2c, #11e234);
     border: none;
     border-radius: 8px;
     color: white;

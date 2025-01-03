@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Services from './components/Services';
 import Footer from './components/Footer';
 import Values from './components/Values';
+import Videos from './components/Videos';
 
 function App() {
   const [animateCallIcon, setAnimateCallIcon] = useState(false);
@@ -24,6 +25,7 @@ function App() {
       <About />
       <Values />
       <Products />
+      <Videos />
       <Services />
       <Partners />
       <Contact />

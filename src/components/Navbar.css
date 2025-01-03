@@ -1,7 +1,7 @@
 .nav-link {
     position: relative;
     display: inline-block;
-    color: #047857; 
+    color: #0ebb2c; 
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -14,13 +14,13 @@
     height: 2px;
     bottom: -3px; /* Adjust this value to move the underline further below the text */
     left: 0;
-    background-color: #047857;
+    background-color: #1750ad;
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
   }
   
   .nav-link:hover {
-    color: #38a169; /* text-green-700 */
+    color: #1750ad; /* text-green-700 */
   }
   
   .nav-link:hover::after {

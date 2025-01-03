@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Videos.css';
+import processingImage from '/src/assets/processing.jpeg';
 
 const Videos = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +46,7 @@ const Videos = () => {
         {/* Column 2: Image */}
         <div className="image-column">
           <img
-            src="../src/assets/processing.jpeg"
+            src={processingImage}
             alt="Processing Image"
             className="processing-image"
           />

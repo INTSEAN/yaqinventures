@@ -1,7 +1,9 @@
+import heroImage from '/src/assets/image7.jpg';
+
 export default function Hero() {
   return (
     <div id="home" className="relative h-screen">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('../src/assets/image7.jpg')", backgroundAttachment: 'fixed' }}>
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})`, backgroundAttachment: 'fixed' }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">

@@ -112,7 +112,7 @@ const Services: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="services-header"
         >
-          <h2>Our Services</h2>
+          <h2 className='font-bold text-4xl'>Our Services</h2>
           <p>Our mission is to empower smallholder farmers and enrich lives through sustainable agribusiness.
           </p>
         </motion.div>
